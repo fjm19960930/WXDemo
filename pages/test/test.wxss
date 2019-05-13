@@ -1,0 +1,14 @@
+.test {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    width: 80%;
+    margin-bottom: 5rpx;
+}
+.button-hover {
+  background-color: red;
+}
+.other-button-hover {
+  background-color: blue;
+}

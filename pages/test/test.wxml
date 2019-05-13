@@ -1,0 +1,11 @@
+<view class="test">
+    <button type="primary" bindtap="scrollClick">scrollView组件</button>
+    <button type="primary" bindtap="textClick">text组件</button>
+    <button type="primary" bindtap="formClick">form组件</button>
+    <button type="primary" bindtap="swiperClick">swiper组件</button>
+    <button type="primary" bindtap='loadingClick'>Loading</button>
+    <button type="primary" plain='true' loading='true' bindtap='toastClick'>Toast</button>
+    <button type="warn" bindtap='modalClick'>Modal</button>
+    <button type="warn" size='mini' bindtap='actionSheetClick'>ActionSheet</button>
+    <button type="primary" bindtap='audioClick'>音 频</button>
+</view>

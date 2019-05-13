@@ -1,0 +1,7 @@
+.group {
+  width: 100%;
+  margin-bottom: 10px;
+}
+slider {
+  width: 200px
+}

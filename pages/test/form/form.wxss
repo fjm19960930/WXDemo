@@ -1,0 +1,25 @@
+.form-rooter-view {
+    display: flex;
+    flex-direction: column;
+    padding: 20rpx
+}
+.checkbox-view {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.checkbox-label {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  display: flex;
+  font-size: 16px;
+  color: #00FF00;
+}
+input {
+    border: 1px #0000FF solid;
+}
+button {
+    margin-top: 20rpx;
+}

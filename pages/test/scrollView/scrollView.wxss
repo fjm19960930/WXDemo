@@ -1,0 +1,26 @@
+.scroll-view-item {
+  height: 80px;
+  width: 100%
+}
+.scroll-view-H {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  width: 500px
+}
+.scroll-view-item-H {
+  height: 100%;
+  width: 200px
+}
+.bg_green {
+  background: green
+}
+.bg_red {
+  background: red
+}
+.bg_yellow {
+  background: yellow
+}
+.bg_blue {
+  background: blue
+}

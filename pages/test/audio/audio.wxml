@@ -1,0 +1,19 @@
+<view class='audio-view-rooter'>
+    <view style="width:250rpx;height:250rpx" bindtap='play'>
+        <image class="image_frame" mode='aspectFit' src='http://www.runoob.com/try/demo_source/paris.jpg'></image>
+    </view>
+
+    <view class='progress-view'>
+        <progress percent="{{duration}}" stroke-width='1' show-info />{{duration}}
+    </view>
+    <view class='button-view' wx:if="{{isPlay==false}}">
+        <image class='button-image' mode='aspectFit' src='../../../images/previous.png' bindtap='previous'></image>
+        <image class='button-image' mode='aspectFit' src='../../../images/play.png' bindtap='play'></image>
+        <image class='button-image' mode='aspectFit' src='../../../images/next.png' bindtap='next'></image>
+    </view>
+    <view class='button-view' wx:if="{{isPlay==true}}">
+        <image class='button-image' mode='aspectFit' src='../../../images/previous.png' bindtap='previous'></image>
+        <image class='button-image' mode='aspectFit' src='../../../images/pause.png' bindtap='stop'></image>
+        <image class='button-image' mode='aspectFit' src='../../../images/next.png' bindtap='next'></image>
+    </view>
+</view>

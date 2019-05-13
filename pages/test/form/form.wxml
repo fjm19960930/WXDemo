@@ -1,0 +1,49 @@
+<view class='form-rooter-view'>
+  <form bindsubmit='formSubmit' bindreset='formReset'>
+
+    <view class="checkbox-view">
+      <view class="title">CheckBox</view>
+      <checkbox-group class="checkbox-label" name="checkbox" bindchange="checkboxChange">
+        <label wx:for="{{items}}">
+          <checkbox value="{{item.name}}" checked="{{item.checked}}" />
+          {{item.value}}
+        </label>
+      </checkbox-group>
+    </view>
+
+    <view>
+        <view class="title">radio</view>
+        <radio-group name="radio" bindchange="radioChange">
+            <label wx:for="{{items}}">
+                <radio value="{{item.name}}" checked="{{item.checked}}" />
+                {{item.value}}
+            </label>
+        </radio-group>
+    </view>
+
+    <view>
+        <view class="title">input</view>
+        <input name="input" type="text" placeholder="please input here" />
+    </view>
+
+    <view>
+        <view class='title'>picker</view>
+        <picker name="picker" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            当前选择：{{array[index]}}
+        </picker>
+    </view>
+
+    <view>
+        <view class='title'>slider</view>
+        <view class="body-view">
+            <slider name="slider" bindchange="sliderChange" min="50" max="200" show-value />
+            <!-- <slider bindchange="sliderChange" min="50" max="200" show-value /> -->
+        </view>
+    </view>
+
+    <view>
+        <button form-type="submit">Submit</button>
+        <button form-type="reset">Reset</button>
+    </view>
+  </form>
+</view>

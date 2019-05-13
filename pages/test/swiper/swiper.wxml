@@ -1,0 +1,45 @@
+<view class="container">
+  <view style="width: 100%">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view>
+    <button type="primary" bindtap="changeIndicatorDots">indicator-dots</button>
+    <button type="primary" bindtap="changeAutoplay">autoplay</button>
+  </view>
+  <view>
+    <slider bindchange="intervalChange" show-value min="500" max="2000"/>interval
+    <slider bindchange="durationChange" show-value min="1000" max="8000"/>duration
+  </view>
+
+  <view class="group">
+    <block wx:for="{{iconSize}}">
+      <icon type="success" size="{{item}}" />
+    </block>
+  </view>
+
+  <view class="group">
+    <block wx:for="{{iconType}}">
+      <icon type="{{item}}" size="40" />
+    </block>
+  </view>
+
+  <view class="group">
+    <block wx:for="{{iconColor}}">
+      <icon type="success" size="40" color="{{item}}" />
+    </block>
+  </view>
+
+  <view class="group">
+    <progress percent="20" show-info />
+    <progress percent="40" stroke-width="12" />
+    <progress percent="60" color="pink" />
+    <progress percent="80" active />
+  </view>
+</view>
