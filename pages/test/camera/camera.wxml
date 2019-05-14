@@ -1,0 +1,7 @@
+<view class='view-rooter'>
+    <camera mode="normal" device-position="{{direction}}" flash="off" binderror="error" frame-size="medium"
+        style="width: 100%; height: 300px;"></camera>
+    <button type="primary" bindtap="takePhoto">拍照</button>
+    <button type="primary" bindtap="changeDirection">切换</button>
+    <image mode="widthFix" src="{{src}}"></image>
+</view>

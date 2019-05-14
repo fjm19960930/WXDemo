@@ -7,7 +7,9 @@
         "pages/test/text/text",
         "pages/test/form/form",
         "pages/test/swiper/swiper",
-        "pages/test/audio/audio"
+        "pages/test/audio/audio",
+        "pages/test/video/video",
+        "pages/test/camera/camera"
     ],
     "window": {
         "backgroundTextStyle": "light",

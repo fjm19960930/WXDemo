@@ -1,19 +1,16 @@
 <view class='audio-view-rooter'>
-    <view style="width:250rpx;height:250rpx" bindtap='play'>
-        <image class="image_frame" mode='aspectFit' src='http://www.runoob.com/try/demo_source/paris.jpg'></image>
+    <view style="width: 250rpx; height: 250rpx; background: #00000000" bindtap='play'>
+        <image class="image_frame" mode='scaleToFill' src='http://g.hiphotos.baidu.com/image/pic/item/6d81800a19d8bc3e770bd00d868ba61ea9d345f2.jpg'></image>
     </view>
 
     <view class='progress-view'>
-        <progress percent="{{duration}}" stroke-width='1' show-info />{{duration}}
+        <progress percent="{{percent}}" stroke-width='1'/>
     </view>
-    <view class='button-view' wx:if="{{isPlay==false}}">
+    <text selectable="true">{{duration}}/{{total}}</text>{{percent}}
+    <view class='button-view'>
         <image class='button-image' mode='aspectFit' src='../../../images/previous.png' bindtap='previous'></image>
-        <image class='button-image' mode='aspectFit' src='../../../images/play.png' bindtap='play'></image>
-        <image class='button-image' mode='aspectFit' src='../../../images/next.png' bindtap='next'></image>
-    </view>
-    <view class='button-view' wx:if="{{isPlay==true}}">
-        <image class='button-image' mode='aspectFit' src='../../../images/previous.png' bindtap='previous'></image>
-        <image class='button-image' mode='aspectFit' src='../../../images/pause.png' bindtap='stop'></image>
+        <image class='button-image' mode='aspectFit' src='../../../images/play.png' bindtap='play' wx:if="{{isPlay==false}}"></image>
+        <image class='button-image' mode='aspectFit' src='../../../images/pause.png' bindtap='stop'wx:if="{{isPlay==true}}"></image>
         <image class='button-image' mode='aspectFit' src='../../../images/next.png' bindtap='next'></image>
     </view>
 </view>

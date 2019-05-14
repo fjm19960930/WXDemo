@@ -6,6 +6,20 @@ Page({
         // @ts-ignore
         wx.stopPullDownRefresh();
     },
+    onShow() {
+        wx.getSetting({
+            success(res) {
+                if (!res.authSetting['scope.address']) {
+                    wx.authorize({
+                        scope: 'scope.address',
+                        success() {//用户允许该权限时调用，若首次请求权限用户没有允许则下一次请求时就不会弹出提示框，
+                                        // 此时需要点击open-type="openSetting"的Button引导用户重新修改授权
+                        }
+                    });
+                }
+            }
+        });
+    },
     textClick() {
         wx.navigateTo({
         url: 'text/text'
@@ -78,6 +92,16 @@ Page({
     audioClick() {
         wx.navigateTo({
             url: 'audio/audio'
+        });
+    },
+    videoClick() {
+        wx.navigateTo({
+            url: 'video/video'
+        });
+    },
+    cameraClick() {
+        wx.navigateTo({
+            url: 'camera/camera'
         });
     }
 })

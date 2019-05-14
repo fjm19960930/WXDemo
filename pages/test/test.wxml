@@ -8,4 +8,7 @@
     <button type="warn" bindtap='modalClick'>Modal</button>
     <button type="warn" size='mini' bindtap='actionSheetClick'>ActionSheet</button>
     <button type="primary" bindtap='audioClick'>音 频</button>
+    <button type="primary" bindtap='videoClick'>视 频</button>
+    <button type="primary" bindtap='cameraClick'>相 机</button>
+    <button open-type="openSetting">修改授权</button>
 </view>

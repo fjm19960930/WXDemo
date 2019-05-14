@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "音 频",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false
 }
