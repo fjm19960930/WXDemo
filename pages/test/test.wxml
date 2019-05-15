@@ -10,5 +10,6 @@
     <button type="primary" bindtap='audioClick'>音 频</button>
     <button type="primary" bindtap='videoClick'>视 频</button>
     <button type="primary" bindtap='cameraClick'>相 机</button>
+    <button type="primary" bindtap='mapClick'>地 图</button>
     <button open-type="openSetting">修改授权</button>
 </view>

@@ -103,5 +103,10 @@ Page({
         wx.navigateTo({
             url: 'camera/camera'
         });
+    },
+    mapClick() {
+        wx.navigateTo({
+            url: 'map/map'
+        });
     }
 })

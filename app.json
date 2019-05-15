@@ -9,7 +9,8 @@
         "pages/test/swiper/swiper",
         "pages/test/audio/audio",
         "pages/test/video/video",
-        "pages/test/camera/camera"
+        "pages/test/camera/camera",
+        "pages/test/map/map"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -48,5 +49,10 @@
         "connectSocket": 3000,
         "downloadFile": 3000
     },
-    "debug": true
+    "debug": true,
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序位置接口的效果展示"
+        }
+    }
 }

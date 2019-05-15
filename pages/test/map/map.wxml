@@ -1,0 +1,30 @@
+<view class='view-rooter'>
+<map id="myMap"
+    longitude="113.324520"
+    latitude="23.099994"
+    scale="14"
+    controls="{{controls}}"
+    markers="{{markers}}"
+    bindmarkertap="markertap"
+    polyline="{{polyline}}"
+    bindregionchange="regionchange" 
+    enable-satellite="{{satellite}}"
+    enable-3D
+    show-location />
+<cover-view class="cover-btn">
+    <cover-view bindtap='location'>
+        <cover-image class="img" src="../../../images/map_icon_location.png" />
+    </cover-view>
+    <cover-view bindtap='change'>
+        <cover-image class="img" src="../../../images/map_icon_change.png" />
+    </cover-view>
+    <cover-view bindtap='layers'>
+        <cover-image class="img" src="../../../images/map_icon_layers.png" />
+    </cover-view>
+</cover-view>
+
+<button type="primary" bindtap="getCenterLocation">获取位置</button>
+<button type="primary" bindtap="moveToLocation">移动位置</button>
+<button type="primary" bindtap="translateMarker">移动标注</button>
+<button type="primary" bindtap="includePoints">缩放视野展示所有经纬度</button>
+</view>
